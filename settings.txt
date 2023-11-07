@@ -1,0 +1,1 @@
+{"name": "Amal", "word_index": 79849, "words": 79849, "finished_words": 0}
