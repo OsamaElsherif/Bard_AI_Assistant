@@ -7,7 +7,7 @@ class DataSet:
 
     def load(self) -> bool:
         try:
-            self.file = open(self.filename, "w")
+            self.file = open(self.filename, "a")
             print(f"{colorDataClass.CYELLOW}{self.filename} loaded successfully{colorDataClass.CYELLOW}")
         except Exception as e:
             print(e)
