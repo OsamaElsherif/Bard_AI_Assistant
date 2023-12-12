@@ -1,0 +1,21 @@
+# open word and summerize a paper for me about bio-nformatics and save it as pdf and send it to Nada Gharib on whatsapp
+
+- OS Command [Our Model]
+  - Open Word --> cmd
+  - save it as pdf --> cmd
+
+- Bard Command [second level]
+  - summerize a paper for me about bio-nformatics
+
+- Third OS Command [third level]  => Mobile Application
+  - send it to Nada on whatsapp
+
+Desktop & Web & Mobile [connected with google account ex. "elsherifosama225@gmail.com" ]
+
+pdf -> Google Drive [ Desktop ]
+Google Drive -> pdf [ Mobile ]
+
+| sender [+201115679951] => [known]
+| reciver [+20100347748] => Name in Contancts
+| content [ pdf ]
+send

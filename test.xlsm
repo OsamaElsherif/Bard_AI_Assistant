@@ -1,0 +1,29 @@
+' Define data ranges
+continents = "A1:A6"
+populations = "B1:B6"
+
+' Enter continent names and population data
+Range(continents).Value = Array("Asia", "Africa", "Europe", "Latin America & Caribbean", "North America", "Oceania")
+Range(populations).Value = Array(4664789000, 1420983000, 748449000, 672030000, 374206000, 44706000)
+
+' Create pie chart
+ActiveSheet.ChartObjects.Add(Left:=100, Top:=50, Width:=400, Height:=300).Chart.SetSourceData Source:=Range(continents & "," & populations)
+
+' Set chart type to pie
+ActiveChart.ChartType = xlPie
+
+' Add title and data labels
+ActiveChart.ChartTitle.Text = "Global Population Distribution by Continent (mid-2023)"
+ActiveChart.SeriesCollection(1).HasDataLabels = True
+ActiveChart.SeriesCollection(1).DataLabels.ShowPercentage = True
+
+' Set chart colors (optional)
+ActiveChart.SeriesCollection(1).Points(1).Interior.ColorIndex = 6 ' Yellow for Asia
+ActiveChart.SeriesCollection(1).Points(2).Interior.ColorIndex = 5 ' Green for Africa
+ActiveChart.SeriesCollection(1).Points(3).Interior.ColorIndex = 4 ' Blue for Europe
+ActiveChart.SeriesCollection(1).Points(4).Interior.ColorIndex = 3 ' Orange for Latin America & Caribbean
+ActiveChart.SeriesCollection(1).Points(5).Interior.ColorIndex = 2 ' Purple for North America
+ActiveChart.SeriesCollection(1).Points(6).Interior.ColorIndex = 1 ' Red for Oceania
+
+' Set legend position (optional)
+ActiveChart.Legend.Position = xlLegendPositionRight

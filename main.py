@@ -99,6 +99,10 @@ def process(word):
         print(f"{colorDataClass.CVIOLET}unrecognized order, plese write Y if the word is correct, or N if not.{colorDataClass.CVIOLET}")
         process(word)
 
+# Alphaptic or Non
+# 
+# 
+
 # reading the file
 with english_dataset as file:
     if settings_obj.finished_words == settings_obj.words:

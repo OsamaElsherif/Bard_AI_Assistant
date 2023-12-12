@@ -1,0 +1,1 @@
+{"name": "Osama", "word_index": 0, "words": 79849, "finished_words": 0}
